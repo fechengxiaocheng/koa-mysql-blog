@@ -1,4 +1,4 @@
-# koa实现一个简易blog网站
+# 基于koa+mysql实现简易blog
 
 ## 要实现的功能页面
 
@@ -14,10 +14,15 @@
 
 ## TODO
 
+### 6.23 update
 * [x] 删除某博客
-* [x] 加入身份验证
-* [] 创建博客支持富文本
+* [x] 加入身份验证，xlj/xlj
 * [x] 显示博客创建时间+浏览数
+* [] 创建博客支持富文本
 * [] 博客数据存在mysql
+* [] 创建留言、删除留言
 
+## 参考
+
+[N-blog 使用 Express + MongoDB 搭建多人博客](https://github.com/nswbmw/N-blog)
 
