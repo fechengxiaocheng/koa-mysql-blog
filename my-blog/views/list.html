@@ -3,14 +3,13 @@
 {% block title %}Posts{% endblock %}
 
 {% block content %}
-  <h1>Posts</h1>
-  <p>You have <strong>{{ posts.length }}</strong> posts!</p>
-  <p><a href="/post/new">Create a Post</a></p>
+  <h1>前端程小程</h1>
+  <p>你一共有 <strong>{{ posts.length }}</strong> 篇博客</p>
+  <p><a href="/post/new">写博客</a></p>
   <ul id="posts">
     {% for post in posts %}
       <li>
-        <h2>{{ post.title }}</h2>
-        <p><a href="/post/{{ post.id }}">Read post</a></p>
+        <h2>{{ post.title }}</h2><span>浏览数：{{ post.views }}</span><span class="gap-left">创建时间：{{ post.created_at|date('Y-m-d h:m:s') }}</span><a href="/post/{{ post.id }}" class="gap-left">查看</a><a href="/delete/{{ post.id }}" class="gap-left">删除</a>
       </li>
     {% endfor %}
   </ul>

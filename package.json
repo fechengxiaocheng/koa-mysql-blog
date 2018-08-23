@@ -31,7 +31,8 @@
     "supertest": "^3.0.0"
   },
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "start": "node ./my-blog/app.js"
   },
   "engines": {
     "node": ">= 7.6"
